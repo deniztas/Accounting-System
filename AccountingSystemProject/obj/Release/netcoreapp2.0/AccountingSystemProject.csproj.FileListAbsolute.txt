@@ -1,0 +1,10 @@
+/Users/deniztas/Projects/AccountingSystemProject/AccountingSystemProject/bin/Release/netcoreapp2.0/AccountingSystemProject.deps.json
+/Users/deniztas/Projects/AccountingSystemProject/AccountingSystemProject/bin/Release/netcoreapp2.0/AccountingSystemProject.runtimeconfig.json
+/Users/deniztas/Projects/AccountingSystemProject/AccountingSystemProject/bin/Release/netcoreapp2.0/AccountingSystemProject.runtimeconfig.dev.json
+/Users/deniztas/Projects/AccountingSystemProject/AccountingSystemProject/bin/Release/netcoreapp2.0/AccountingSystemProject.dll
+/Users/deniztas/Projects/AccountingSystemProject/AccountingSystemProject/bin/Release/netcoreapp2.0/AccountingSystemProject.pdb
+/Users/deniztas/Projects/AccountingSystemProject/AccountingSystemProject/obj/Release/netcoreapp2.0/AccountingSystemProject.csproj.CoreCompileInputs.cache
+/Users/deniztas/Projects/AccountingSystemProject/AccountingSystemProject/obj/Release/netcoreapp2.0/AccountingSystemProject.AssemblyInfoInputs.cache
+/Users/deniztas/Projects/AccountingSystemProject/AccountingSystemProject/obj/Release/netcoreapp2.0/AccountingSystemProject.AssemblyInfo.cs
+/Users/deniztas/Projects/AccountingSystemProject/AccountingSystemProject/obj/Release/netcoreapp2.0/AccountingSystemProject.dll
+/Users/deniztas/Projects/AccountingSystemProject/AccountingSystemProject/obj/Release/netcoreapp2.0/AccountingSystemProject.pdb

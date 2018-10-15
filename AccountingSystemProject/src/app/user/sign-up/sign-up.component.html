@@ -1,0 +1,46 @@
+<form class="col s12 white" #userRegistrationForm="ngForm" (ngSubmit)="OnSubmit(userRegistrationForm)">
+  <div class="row">
+    <div class="input-field col s6">
+      <input type="text" name="user_name">
+      <label>First Name</label>
+    </div>
+    <div class="input-field col s6">
+      <input type="text" name="user_surname">
+      <label>Last Name</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input class="validate" type="text" required name="email">
+      <label data-error="Invalid email!">Email</label>
+      <label data-error="Required field!"></label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <label data-error="Invalid email!">Password</label>
+      <input class="validate" type="password" name="password"  required minlength="3">
+      <label data-error="Your passwords must match"></label>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="input-field col s12">
+      <input class="validate" type="password" name="ConfirmPassword"  required minlength="3">
+      <label data-error="Your passwords must match">Confirm Password</label>
+      <!--<label [attr.data-error]="validatePassword.errors!=null?(validatePassword.errors.required?'Required field!':'Minimum 3 characters needed'):''"></label>-->
+      <!--<<span [attr.data-error]="user.password != ConfirmPassword?('Required field!')">Your passwords must match.</span>-->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s12">
+      <!--<button [disabled]="!userRegistrationForm.valid" class="btn-large btn-submit" type="submit">Submit</button>-->
+      <button [disabled]="!(userRegistrationForm.valid)" class="btn-large btn-submit" type="submit">Submit</button>
+    </div>
+  </div>
+</form>
+
+

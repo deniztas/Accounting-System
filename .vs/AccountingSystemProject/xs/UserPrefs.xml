@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{E213B241-C3C1-40CC-90CD-CD59A102D349}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AccountingSystemProject/src/app/home/home.component.ts">
+    <Files>
+      <File FileName="AccountingSystemProject/src/app/home/expenseService.ts" Line="57" Column="7" />
+      <File FileName="AccountingSystemProject/Controllers/ExpenseController.cs" Line="147" Column="10" />
+      <File FileName="AccountingSystemProject/src/app/home/home.component.html" Line="40" Column="54" />
+      <File FileName="AccountingSystemProject/src/app/user/sign-in/sign-in.component.html" Line="19" Column="24" />
+      <File FileName="AccountingSystemProject/src/app/user/sign-up/sign-up.component.html" Line="15" Column="55" />
+      <File FileName="AccountingSystemProject/src/app/user/user.component.html" Line="26" Column="1" />
+      <File FileName="AccountingSystemProject/src/app/user/user.component.ts" Line="14" Column="1" />
+      <File FileName="AccountingSystemProject/src/app/home/home.component.ts" Line="44" Column="9" />
+      <File FileName="AccountingSystemProject/src/app/user/sign-in/sign-in.component.ts" Line="33" Column="6" />
+      <File FileName="AccountingSystemProject/src/app/app.module.ts" Line="37" Column="23" />
+      <File FileName="AccountingSystemProject/src/app/update-expense/update-expense.component.html" Line="13" Column="13" />
+      <File FileName="AccountingSystemProject/src/app/add-expense/add-expense.component.html" Line="13" Column="13" />
+      <File FileName="AccountingSystemProject/src/app/add-expense/add-expense.component.ts" Line="25" Column="7" />
+      <File FileName="AccountingSystemProject/src/app/update-expense/update-expense.component.ts" Line="25" Column="26" />
+      <File FileName="AccountingSystemProject/src/index.html" Line="18" Column="93" />
+      <File FileName="AccountingSystemProject/src/app/home/Expense.module.ts" Line="20" Column="21" />
+      <File FileName="AccountingSystemProject/src/app/home/sortPipe.ts" Line="22" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AccountingSystemProject PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

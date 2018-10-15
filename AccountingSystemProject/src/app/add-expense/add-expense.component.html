@@ -1,0 +1,92 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="/home" class="brand-logo center">
+      <i class="material-icons">cloud</i>Accounting System
+    </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <dir>
+        Wellcome {{this.username}}
+        <li>
+
+          <a (click)="Logout()">Logout</a>
+        </li>
+      </dir>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+
+<form #insertExpenseForm="ngForm" (ngSubmit)="insertExpense(insertExpenseForm)">
+  <div style="background-color: #ffffff">
+    <div class="modal-dialog" style="width:80%" >
+
+      <div class="modal-content">
+
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h3>Insert Expense Form</h3>
+                <div class="row">
+                  <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Expense Name</label>
+                        <input name="expense_name" class="form-control" required #expense_name="ngModel" placeholder="Expense Name" [(ngModel)]="expense.expense_name">
+                      </div>
+                      <div class="form-group">
+                        <label>Expense Amount (TL)</label>
+                        <input name="expense_amount_TL" (keypress)="numberOnly($event)" class="form-control" required #expense_amount_TL="ngModel" placeholder="Expense Amount (TL)" [(ngModel)]="expense.expense_amount_TL">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Expense Amount (Dollar)</label>
+                        <input name="expense_amount_dollar" (keypress)="numberOnly($event)" class="form-control" #expense_amount_dollar="ngModel" placeholder="Expense Amount (Dollar)" [(ngModel)]="expense.expense_amount_dollar">
+                      </div>
+                      <div>
+                        <div class="form-group">
+                          <label>Expense Date</label>
+                          <input type="date" name="expense_date" class="form-control" required min="2000-01-02" #expense_date="ngModel" placeholder="Expense Explanation" [(ngModel)]="expense.expense_date"><br><br>
+                        </div>
+                        <div class="form-group">
+                          <label>Expense Explanation</label>
+                          <textarea name="expense_explaination" class="form-control" #expense_explaination="ngModel" rows="3" placeholder="Enter text" [(ngModel)]="expense.expense_explaination"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label>Whose Expense?</label>
+                          <input name="whose_expense_name" class="form-control"  #whose_expense_name="ngModel" placeholder="Whose Expense?" [(ngModel)]="expense.whose_expense_name">
+
+                        </div>
+                      </div>
+                      <div>
+                        <button class="btn btn-success" [disabled]="!insertExpenseForm.form.valid" type="submit"  >Add Project</button>
+                      </div>
+                  </div>
+                  <!-- /.col-lg-6 (nested) -->
+                  <!-- /.row (nested) -->
+                </div>
+              </div>
+              <h5>{{expense.expense_date}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="EntityFramework.SqlServerCompact" Version="6.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.1.1" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.108" />
+    <PackageReference Include="angularjs" Version="1.7.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Database\" />
+    <Folder Include="Entity\" />
+    <Folder Include="src\Login\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Data\DataClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="AngularProject\src\tsconfig.app.json" />
+    <_ContentIncludedByDefault Remove="AngularProject\src\tsconfig.spec.json" />
+    <_ContentIncludedByDefault Remove="AngularProject\src\tslint.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="src\app\icons\refresh-button.png" />
+  </ItemGroup>
+</Project>

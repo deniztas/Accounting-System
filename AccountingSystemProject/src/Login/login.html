@@ -1,0 +1,43 @@
+<div style="text-align:center">
+  <h1>
+    {{title}}
+  </h1>
+</div>
+<form #loginForm="ngForm" (submit)="login(loginForm)">
+  <div id="content" class="content" style="min-width: 360px; padding: 5%">
+    <!-- BEGIN LOGIN FORM -->
+    <h3 class="form-title">Hesabınıza Giriş Yapın</h3>
+    <div class="alert alert-danger display-hide">
+      <button class="close" data-close="alert"></button>
+      <span>
+      Kullanıcı Adı Ve Şifre Giriniz
+    </span>
+    </div>
+    <div id="emailField" class="form-group">
+      <label class="control-label visible-ie8 visible-ie9">Email</label>
+      <div class="input-icon">
+        <i class="fa fa-user"></i>
+        <input  required id="email" class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="username">
+      </div>
+      <span id="emailSpan" for="email" class="help-block" style="display: none">Bu alan gereklidir</span>
+    </div>
+    <div id="passwordField" class="form-group">
+      <label class="control-label visible-ie8 visible-ie9">Password</label>
+      <div class="input-icon">
+        <i class="fa fa-lock"></i>
+        <input id="passwordBox" class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password">
+      </div>
+      <span id="passwordSpan" for="password" class="help-block" style="display: none">Bu alan gereklidir</span>
+    </div>
+    <div class="form-actions" style="padding-top: 30%;">
+      <label class="checkbox">
+        <div class="checker"><span><input type="checkbox" name="rememberBox" id="rememberBox" value="1"></span></div> Beni Hatırla
+      </label>
+      <button name="LoginButton" id="LoginButton" type="submit" class="btn green pull-right">
+        Devam <i class="m-icon-swapright m-icon-white"></i>
+      </button>
+    </div>
+  </div>
+
+</form>
+

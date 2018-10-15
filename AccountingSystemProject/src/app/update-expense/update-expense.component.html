@@ -1,0 +1,89 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="/home" class="brand-logo center">
+      <i class="material-icons">cloud</i>Accounting System
+    </a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <dir>
+        Wellcome {{this.username}}
+        <li>
+
+          <a (click)="Logout()">Logout</a>
+        </li>
+      </dir>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+
+  <form #updateExpenseForm="ngForm" (ngSubmit)="SubmitUpdate(updateExpenseForm)">
+    <div style="background-color: #ffffff">
+      <div class="modal-dialog" style="width:80%" >
+
+        <div class="modal-content">
+
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h3>Update Expense Form</h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Expense Name</label>
+                        <input name="expense_name" class="form-control" #expense_name="ngModel" required  [(ngModel)]="selectedExpense.expense_name">
+                      </div>
+                      <div class="form-group">
+                        <label>Expense Amount (TL)</label>
+                        <input name="expense_amount_TL" class="form-control" required  [(ngModel)]="selectedExpense.expense_amount_TL">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Expense Amount (Dollar)</label>
+                        <input name="expense_amount_dollar" class="form-control"  [(ngModel)]="selectedExpense.expense_amount_dollar">
+                      </div>
+                      <div>
+                        <div class="form-group">
+                          <label>Expense Date</label>
+                          <input type="date" name="expense_date" class="form-control" required min="2000-01-02"  [(ngModel)]="selectedExpense.expense_date"><br><br>
+                        </div>
+                        <div class="form-group">
+                          <label>Expense Explanation</label>
+                          <textarea name="expense_explaination" class="form-control"  [(ngModel)]="selectedExpense.expense_explaination"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label>Whose Expense?</label>
+                          <input name="whose_expense_name" class="form-control"   [(ngModel)]="selectedExpense.whose_expense_name">
+
+                        </div>
+                      </div>
+                      <div>
+                        <button class="btn btn-success" [disabled]="!updateExpenseForm.form.valid" type="submit">Update Project</button>
+                      </div>
+                    </div>
+                    <!-- /.col-lg-6 (nested) -->
+                    <!-- /.row (nested) -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+
